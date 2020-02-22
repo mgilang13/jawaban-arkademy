@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Testing</title>
+  </head>
+  <body>
+    <div
+      class="row header shadow p-3 mb-5 bg-white rounded"
+      style="height:130px"
+    >
+      <div class="col-2">
+        <img width="150px" src="mainlogo.png" alt="" />
+      </div>
+      <div class="col">
+        <form>
+          <div class="form-group row" style="margin-top:20px">
+            <div class="col-sm-9">
+              <input
+                style="font-size:20pt; background-color:#bbbbbb; color:#fff; margin-top:10px"
+                type="text"
+                class="form-control"
+                placeholder="Search"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary shadow p-3 mb-5 rounded btn-add"
+              data-toggle="modal"
+              data-target="#add-form"
+            >
+              ADD
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <table class="table shadow p-3 mb-5 rounded">
+          <thead>
+            <th scope="col">No.</th>
+            <th scope="col">Cashier</th>
+            <th scope="col">Product</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Pevita Pearce</td>
+              <td>Latte</td>
+              <td>Drink</td>
+              <td>Rp. 10.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Raisa Andriana</td>
+              <td>Cake</td>
+              <td>Food</td>
+              <td>Rp. 15.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Raisa Andriana</td>
+              <td>Fried Rice</td>
+              <td>Food</td>
+              <td>Rp. 30.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Pevita Pearce</td>
+              <td>Gudeg</td>
+              <td>Food</td>
+              <td>Rp. 35.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>Joko Purwadhi</td>
+              <td>Ice Tea</td>
+              <td>Drink</td>
+              <td>Rp. 55.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>Muhammad Gilang</td>
+              <td>Bakso</td>
+              <td>Food</td>
+              <td>Rp. 20.000</td>
+              <td>
+                <a href=""><img class="icon-crud" src="edit.png" alt=""/></a
+                ><a href="#"><img class="icon-crud" src="bin.png" alt=""/></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="add-form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="add-form">ADD</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="add-form">
+              <div class="form-group">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Pevita Pearce</option>
+                  <option value="1">Rini Andriani</option>
+                  <option value="2">Muhammad Gilang</option>
+                  <option value="3">Joko Purwandhi</option> </select
+                ><br />
+                <select class="custom-select" id="drink">
+                  <option selected>Kategori</option>
+                  <option value="1">Drink</option>
+                  <option value="2">Food</option> </select
+                ><br />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Produk"
+                /><br />
+                <input type="text" class="form-control" placeholder="Price" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-add">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

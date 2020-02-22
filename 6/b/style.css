@@ -1,0 +1,42 @@
+.header {
+}
+
+::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.btn-add {
+  width: 212px;
+  font-size: 17pt;
+  background-color: #ffd9a0;
+  border: none;
+}
+
+.btn-add:focus {
+  background-color: #ffd9a0;
+}
+
+.btn-add:hover {
+  background-color: #e7b467;
+}
+
+table {
+  font-size: 17pt;
+  border: 1px solid #ffd9a0;
+  border-radius: 10px;
+}
+thead {
+  background-color: #ffd9a0;
+}
+.icon-crud {
+  width: 20px;
+  margin: 0px 10px;
+}
+
+.modal-title {
+  font-size: 30pt;
+}
+
+.add-form {
+  font-size: 20pt;
+}
